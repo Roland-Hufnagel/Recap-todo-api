@@ -1,4 +1,6 @@
 package org.example.recaptodoapi.dto;
 
-public record TodoDto() {
+import org.example.recaptodoapi.model.TodoStatus;
+
+public record TodoDto(String id, String description, TodoStatus status) {
 }

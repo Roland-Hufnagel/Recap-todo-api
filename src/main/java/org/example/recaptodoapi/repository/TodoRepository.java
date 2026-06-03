@@ -1,4 +1,9 @@
 package org.example.recaptodoapi.repository;
 
-public interface TodoRepository {
+import org.example.recaptodoapi.model.Todo;
+import org.springframework.data.mongodb.repository.MongoRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface TodoRepository extends MongoRepository<Todo, String> {
 }
